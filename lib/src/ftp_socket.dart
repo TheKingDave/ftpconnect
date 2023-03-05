@@ -206,4 +206,16 @@ class FTPSocket {
     logger.log('Disconnected!');
     return true;
   }
+
+  /// Get a equally secured socket with specified port
+  /// 
+  /// Meant for internal use
+  Future<Socket> getSocketWithEqualSecurity(int port) {
+    if (securityType == SecurityType.FTPS ||
+        securityType == SecurityType.FTPES) {
+      return SecureSocket.connect(host, port,
+          timeout: Duration(seconds: timeout));
+    }
+    return Socket.connect(host, port, timeout: Duration(seconds: timeout));
+  }
 }

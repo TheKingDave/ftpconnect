@@ -32,7 +32,7 @@ This Library is based on <a href="https://github.com/Nexific/dart_ftpclient">dar
 </p>
 
 ## Example upload file
-###example 1:
+### example 1:
 ```dart
 import 'dart:io';
 import 'package:ftpconnect/ftpConnect.dart';
@@ -47,7 +47,7 @@ main() async{
 }
 ```
 
-###example 2: step by step
+### example 2: step by step
 ```dart
 import 'dart:io';
 import 'package:ftpconnect/ftpConnect.dart';
@@ -66,7 +66,7 @@ main() async{
 ```
 
 ## Download file
-###example 1:
+### example 1:
 ```dart
 import 'dart:io';
 import 'package:ftpconnect/ftpConnect.dart';
@@ -81,7 +81,7 @@ main() async{
 }
 ```
 
-###example 2: step by step
+### example 2: step by step
 ```dart
 import 'dart:io';
 import 'package:ftpconnect/ftpConnect.dart';
@@ -99,7 +99,7 @@ main() {
 }
 ```
 ## Other Features
-###Directory functions:
+### Directory functions:
 ```dart
 //Get directory content
 ftpConnect.listDirectoryContent();
@@ -122,7 +122,7 @@ ftpConnect.checkFolderExistence('dirToCheck');
 //create a directory if it does not exist
 ftpConnect.createFolderIfNotExist('dirToCreate');
 ```
-###File functions:
+### File functions:
 ```dart
 //rename file
 ftpConnect.rename('test1.txt', 'test2.txt');
